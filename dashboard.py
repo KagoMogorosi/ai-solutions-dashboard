@@ -143,7 +143,7 @@ app.index_string = """
             border-color: #67e8f9 !important;
             box-shadow: 0 0 0 3px rgba(103,232,249,0.15) !important;
         }
-        .login-input::placeholder { color: #94a3b8 !important; opacity: 1 !important; }
+
         .login-btn {
             width: 100%;
             background: linear-gradient(135deg, #0ea5e9, #14b8a6) !important;
@@ -395,12 +395,12 @@ login_layout = html.Div(className="login-wrap", children=[
         html.Div(id="login-error"),
 
         html.Div("Username", className="login-label"),
-        dcc.Input(id="login-user", type="text", placeholder="Enter username",
+        dcc.Input(id="login-user", type="text",
                   className="login-input", debounce=False,
                   style={"display":"block"}),
 
         html.Div("Password", className="login-label"),
-        dcc.Input(id="login-pass", type="password", placeholder="Enter password",
+        dcc.Input(id="login-pass", type="password",
                   className="login-input", debounce=False,
                   style={"display":"block"}),
 
