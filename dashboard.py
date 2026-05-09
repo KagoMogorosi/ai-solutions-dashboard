@@ -129,19 +129,21 @@ app.index_string = """
         }
         .login-input {
             width: 100%;
-            background: rgba(15, 23, 42, 0.8) !important;
-            border: 1px solid rgba(148, 163, 184, 0.25) !important;
+            background: #1e3a5f !important;
+            border: 1.5px solid #67e8f9 !important;
             border-radius: 10px !important;
             color: #f1f5f9 !important;
             padding: 12px 14px !important;
             font-size: 0.95rem !important;
             margin-bottom: 18px;
             outline: none;
-            transition: border-color 0.2s;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: block;
         }
         .login-input:focus {
-            border-color: #67e8f9 !important;
-            box-shadow: 0 0 0 3px rgba(103,232,249,0.15) !important;
+            border-color: #38bdf8 !important;
+            box-shadow: 0 0 0 4px rgba(103,232,249,0.25) !important;
+            background: #1e3a5f !important;
         }
 
         .login-btn {
