@@ -1,12 +1,6 @@
 """
 dashboard.py  –  AI-Solutions IIS Analytics Dashboard
-<<<<<<< HEAD
 
-=======
-======================================================
-Fully FR-compliant version.
->>>>>>> 29889e90a9dee44e31b6280e7bc07a125bf3b073
-Run:  python dashboard.py  →  http://127.0.0.1:8050
 """
 
 import os
@@ -28,12 +22,9 @@ GRN = "#22c55e"   # green
 PAL = [AB, TEA, "#60a5fa", PUR, "#f472b6", ORG, "#34d399", "#fb923c", "#a78bfa", "#38bdf8"]
 
 # ── Data ───────────────────────────────────────────────────────────────────────
-<<<<<<< HEAD
 import os
 if not os.path.exists("web_server_logs.csv"):
     import generate_logs
-=======
->>>>>>> 29889e90a9dee44e31b6280e7bc07a125bf3b073
 RAW = pd.read_csv("web_server_logs.csv", parse_dates=["date"])
 RAW["month"]   = RAW["date"].dt.to_period("M").astype(str)
 RAW["week"]    = RAW["date"].dt.isocalendar().week.astype(int).astype(str).apply(lambda w: f"Wk {w}")
